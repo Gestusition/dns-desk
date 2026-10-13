@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>dns-desk</AssemblyName>
+    <Version>1.0.0</Version>
+    <Authors>Gestusition</Authors>
+    <Description>A Windows CLI for DNS settings and automatic DNS-over-HTTPS template lookup.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../DnsDesk.Core/DnsDesk.Core.csproj" />
+    <EmbeddedResource Include="Backend.ps1" />
+  </ItemGroup>
+</Project>
